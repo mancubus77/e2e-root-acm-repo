@@ -1,0 +1,12 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+    app: nalab-env
+  name: nalab-env-placement-1
+  namespace: nalab
+spec:
+  clusterSelector:
+    matchLabels:
+      'local-cluster': 'true'
