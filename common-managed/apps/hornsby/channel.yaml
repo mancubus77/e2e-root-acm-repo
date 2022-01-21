@@ -8,6 +8,6 @@ metadata:
   namespace: "ggitlabcom-skozlov1-acm-ztp-hosts-ns"
 spec:
   type: Git
-  pathname: 'https://gitlab.com/skozlov1/acm-ztp-hosts.git'
+  pathname: 'https://github.com/mancubus77/myrepo.git'
   secretRef:
     name: ggitlabcom-skozlov1-acm-ztp-hosts-auth
