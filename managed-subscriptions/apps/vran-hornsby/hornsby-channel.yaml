@@ -13,7 +13,7 @@
 #   namespace: myrepogit-ns
 # spec:
 #   type: Git
-#   pathname: 'https://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@github.com/mancubus77/myrepo.git'
+#   pathname: 'https://github.com/mancubus77/myrepo.git'
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: Channel
@@ -24,4 +24,4 @@ metadata:
   namespace: hornsby
 spec:
   type: Git
-  pathname: 'https://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@github.com/mancubus77/myrepo.git'
+  pathname: 'https://github.com/mancubus77/myrepo.git'
