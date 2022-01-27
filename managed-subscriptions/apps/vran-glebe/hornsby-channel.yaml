@@ -1,0 +1,27 @@
+# ---
+# apiVersion: v1
+# kind: Namespace
+# metadata:
+#   name: e2eglebeclustergit-ns
+# ---
+# apiVersion: apps.open-cluster-management.io/v1
+# kind: Channel
+# metadata:
+#   annotations:
+#     apps.open-cluster-management.io/reconcile-rate: medium
+#   name: e2eglebeclustergit-channel
+#   namespace: e2eglebeclustergit-ns
+# spec:
+#   type: Git
+#   pathname: 'https://github.com/mancubus77/e2e-glebe-cluster.git'
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  annotations:
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: e2eglebeclustergit-channel
+  namespace: hornsby
+spec:
+  type: Git
+  pathname: 'https://github.com/mancubus77/e2e-glebe-cluster.git'
