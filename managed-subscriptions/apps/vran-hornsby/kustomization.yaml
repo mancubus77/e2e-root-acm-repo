@@ -3,7 +3,6 @@ kind: Kustomization
 resources:
   - hornsby-channel.yaml
   - hornsby-placementrule.yaml
-  - kustomization.yaml
   - hornsby-subscription.yaml
   - hornsby-namespace.yaml
   - hornsby-application.yaml
