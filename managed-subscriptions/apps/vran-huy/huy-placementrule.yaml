@@ -1,0 +1,12 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+    app: vran-huy-app
+  name: vran-huy-placemenrule
+  namespace: huy
+spec:
+  clusterSelector:
+    matchLabels:
+      'local-cluster': 'true'
