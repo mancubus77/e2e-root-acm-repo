@@ -1,8 +1,0 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-  - cl9-namespace.yaml
-  - cl9-channel.yaml
-  - cl9-application.yaml
-  - cl9-placementrule.yaml
-  - cl9-subscription.yaml
