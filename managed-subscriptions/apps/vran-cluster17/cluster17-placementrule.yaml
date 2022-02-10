@@ -1,0 +1,12 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+    app: vran-cluster17-app
+  name: vran-cluster17-placemenrule
+  namespace: cluster17
+spec:
+  clusterSelector:
+    matchLabels:
+      'local-cluster': 'true'

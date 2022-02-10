@@ -1,0 +1,27 @@
+# ---
+# apiVersion: v1
+# kind: Namespace
+# metadata:
+#   name: e2ecluster17clustergit-ns
+# ---
+# apiVersion: apps.open-cluster-management.io/v1
+# kind: Channel
+# metadata:
+#   annotations:
+#     apps.open-cluster-management.io/reconcile-rate: medium
+#   name: e2ecluster17clustergit-channel
+#   namespace: e2ecluster17clustergit-ns
+# spec:
+#   type: Git
+#   pathname: 'https://github.com/mancubus77/e2e-cluster17-cluster.git'
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  annotations:
+    apps.open-cluster-management.io/reconcile-rate: medium
+  name: e2ecluster17clustergit-channel
+  namespace: cluster17
+spec:
+  type: Git
+  pathname: 'https://github.com/mancubus77/e2e-cluster17-cluster.git'
